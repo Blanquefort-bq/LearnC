@@ -5,7 +5,7 @@ int altlen(char *start){
     int length = 0;
     while(*start != '\0'){
         length++;
-        *start++;
+        start++;
     }
     return length;
 }
