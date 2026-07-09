@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <string.h>
+#include "AltLib.h"
 
 char *altchr(char *str, const int ch){
 
@@ -10,13 +9,4 @@ char *altchr(char *str, const int ch){
         str++; 
     }
     return str;
-}
-
-
-int main(void){
-    
-    printf("%s\n", altchr("Searching",'c'));//character
-    printf("%p\n",(void*)altchr("Searching",'c'));
-
-    return 0;
 }

@@ -1,8 +1,5 @@
 #include <stdio.h>
-
-
-char s1[] = "StringWithinString";
-char s2[] = "Within";
+#include "AltLib.h"
 
 char *Altstr(char *Container, char *Contained){
     int times = 0;
@@ -23,11 +20,4 @@ char *Altstr(char *Container, char *Contained){
         Container++;
     }
     return NULL;
-}
-
-int main(void){
-
-    
-    printf("%p\n",(void*)Altstr(s1, s2));
-    return 0;
 }
