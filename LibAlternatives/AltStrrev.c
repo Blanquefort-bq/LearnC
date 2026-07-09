@@ -1,15 +1,4 @@
-#include <stdio.h>
-
-
-int altlen(char *str){
-    int len = 0;
-    while(*str){
-        len++;
-        str++;
-    }
-    return len;
-}
-
+#include "AltLib.h"
 
 void altrev(char *str){
 
@@ -20,12 +9,4 @@ void altrev(char *str){
         *(str+i) = *(str+len-1-i);
         *(str+len-1-i) = temp;
     }
-}
-
-int main(void){
-    char StrToRev[] = "String to reverse";
-
-    printf("before: %s\n",StrToRev);
-    altrev(StrToRev);
-    printf("after: %s\n", StrToRev);
 }

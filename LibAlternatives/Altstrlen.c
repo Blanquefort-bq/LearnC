@@ -1,5 +1,4 @@
-#include <stdio.h>
-
+#include "AltLib.h"
 
 int altlen(char *start){
     int length = 0;
@@ -8,11 +7,4 @@ int altlen(char *start){
         start++;
     }
     return length;
-}
-
-int main(void){
-    char String[20] = "String";
-    int a = altlen(String);
-    printf("długość napisu: %d", a);
-    return 0;
 }
